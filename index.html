@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio / Hoja de Vida - Mariana Mendoza Beltran</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!--NAV-->
+    <nav class="navbar">
+        <div class="logo">Mariana</div>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn" href="#contacto">Contáctame</a>
+    </nav>
+
+    <!--HERO / BANNER (imagen 1980x550 como background)-->
+    <header id="inicio" class="banner">
+        <div class="banner-texto">
+        <h1>Todo empieza con una idea</h1>
+        <p>Historias visuales, estrategia y creatividad en movimiento.</p>
+        <div class="cta-group">
+            <a class="btn-primario" href="#proyectos">Ver proyectos</a>
+            <a class="btn-secundario" href="#sobre" >Sobre mí</a>
+        </div>
+    </div>
+</header>
+<main>
+
+    <!--SOBRE MÍ-->
+    <section id="sobre" class="container panel">
+        <h2>Perfil</h2>
+      <p>
+        Estudiante de Publicidad y Marketing Digital, actualmente cursando quinto semestre.
+        Soy una persona responsable, creativa y proactiva, me gustan mucho los animalitos, jugar 
+        en mis tiempos libres. Tengo experiencia en Fotografia publicitaria, realizar investigaciones, crear campañas
+        y explorando nuevas formas de conectar.
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="container panel">
+      <h2>Mis Servicios</h2>
+      <div class="tarjetas">
+        <article class="card">
+          <h3>Estrategia de Marketing</h3>
+          <p>Desarrollo estrategias para ayudar a marcas y proyectos en entorno digital.</p>
+        </article>
+        <article class="card">
+          <h3>Diseño y Branding</h3>
+          <p>Creación de identidades visuales, diseño digital y elementos graficos que representan la escencia de la marca.</p>
+        </article>
+        <article class="card">
+          <h3>Fotografia de Marca y Contenido</h3>
+          <p>Producción de Fotografias.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES (TABLA) -->
+    <section class="container panel">
+      <h2>Habilidades y Herramientas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Habilidad</th>
+            <th>Nivel</th>
+            <th>Experiencia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML &amp; CSS</td>
+            <td>En proceso</td>
+            <td>6 meses</td>
+          </tr>
+          <tr>
+            <td>Photoshop / Illustrator</td>
+            <td>En proceso</td>
+            <td>2 años</td>
+          </tr>
+          <tr>
+            <td>Fotografia</td>
+            <td>Intermedio</td>
+            <td>2 años</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PROYECTOS (EJEMPLO CON IMÁGENES Y LISTA) -->
+    <section id="proyectos" class="container panel">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="img/ajolote.jpg" alt="Miniatura del Proyecto 1">
+          <div class="card-content">
+            <h3>Proyecto 1 – Infografia</h3>
+            <ol>
+              <li>Investigación de una marca.</li>
+              <li>Prototipo de alta fidelidad.</li>
+              <li>Entrega a desarrollo.</li>
+            </ol>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/foto producto.JPG" alt="Miniatura del Proyecto 2">
+          <div class="card-content">
+            <h3>Proyecto 2 – Fotografia</h3>
+            <ol>
+              <li>Calidad foto.</li>
+              <li>Checkout optimizado.</li>
+              <li>Pruebas A/B.</li>
+            </ol>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/infografia.jpg" alt="Miniatura del Proyecto 3"> 
+          <div class="card-content">
+            <h3>Proyecto 3 – Infografia</h3>
+            <ol>
+              <li>Naming y tono de marca.</li>
+              <li>Logo + sistema gráfico.</li>
+              <li>Guía de uso.</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO + REDES -->
+    <section id="contacto" class="container panel">
+      <h2>Contáctame</h2>
+      <form class="contact-form">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu nombre completo" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Correo</label>
+          <input id="email" type="email" placeholder="tunombre@correo.com" required />
+        </div>
+
+        <div class="field full">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primario">Enviar</button>
+        </div>
+      </form>
+
+      <div class="redes">
+        <a class="social fb" href="#" aria-label="Facebook">Facebook</a>
+        <a class="social ig" href="#" aria-label="Instagram">Instagram</a>
+        <a class="social tk" href="#" aria-label="TikTok">TikTok</a>
+        <a class="social be" href="#" aria-label="Behance">Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Portafolio de Mariana Mendoza. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
